@@ -1,0 +1,117 @@
+<div class="cu-container" (click)="roll()">
+    <div *ngIf="screenWidth > 1060" #popup id="popup">
+        <div id="collection-wrapper">
+            <a #link (mouseover)="openModal('modal-1')" >Collections <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
+        </div>
+
+        <div  id="aboutus-wrapper">
+            <a (mouseover)="openModal('modal-2')" #link href="##">About us <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
+        </div>
+
+        <div id="fb-icon">
+            <a #link href="##"><fa-icon [icon]="['fab', 'facebook-square']"></fa-icon> / <fa-icon [icon]="['fab', 'instagram-square']"></fa-icon></a>
+        </div>
+    </div>
+
+    <div id="carousel" class="row">
+        <app-carousel [slides]="slides"></app-carousel>
+    </div>
+
+
+    <h1>Store Collection</h1>
+    <div class="store-collection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-4">
+                    <div class="tempnails">
+                        <img src="../../assets/image/route66_plates.JPG" alt="">
+                        <div>
+                            <h2>Route 66 Signs</h2>
+                            <small>Vintage Tin Signs</small>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-4">
+                    <div class="tempnails">
+                        <img src="../../assets/image/hangingLicencePlates.JPG" alt="">
+                        <div>
+                            <h2>Hanging License Plates</h2>
+                            <small>License plates</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 mt-sm-0 col-md-4 mt-md-0">
+                    <div class="tempnails">
+                        <img src="../../assets/image/bottleCap.JPG" alt="">
+                        <div>
+                            <h2>Bottle Caps</h2>
+                            <small>Wall Decoration Bottle Caps</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6  mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div class="tempnails">
+                        <img src="../../assets/image/garageSign.JPG" alt="">
+                        <div>
+                            <h2>Garage Signs</h2>
+                            <small>Vintage Garage Signs</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div class="tempnails">
+                        <img src="../../assets/image/oilDrum.JPG" alt="">
+                        <div>
+                            <h2>Oil Drums</h2>
+                            <small>Stool</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div class="tempnails">
+                        <img src="../../assets/image/recordPlate.JPG" alt="">
+                        <div>
+                            <h2>Vinyl Record</h2>
+                            <small>Wall Decoration LP</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1>Featured Products</h1>
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div  class="col-xs-12 mb-4 mb-md-0 col-md-8">
+                    <a id="img01" href="##">
+                        <img src="../../assets/image/collections.JPG" alt="image">
+                        <h2>Collections</h2>
+                    </a>
+                </div>
+
+                <div  class="col-xs-12 col-md-4">
+                    <a id="img02" href="##">
+                        <img src="../../assets/image/route66_02.jpg" alt="">
+                        <h2>Browse Our Vintages</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<to-modal id="modal-1">
+</to-modal>
+
+<to-modal id="modal-2">
+</to-modal>

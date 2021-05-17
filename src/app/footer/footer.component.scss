@@ -1,0 +1,67 @@
+:host {
+    display: block;
+
+
+    footer {
+        margin: 0;
+        background-color: black;
+        .logo {
+            img {
+                height: 100%;
+                width: 311px;
+                margin: auto;
+            }
+        }
+
+        .collection {
+            text-align: left;
+
+            fa-icon {
+                font-size: 1rem;
+            }
+
+        }
+        .other {
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                margin-top: 0.5rem;
+                // width: fit-content;
+                font-size: 1.2rem;
+            }
+        }
+
+        .collection, .services, .other {
+            a:hover {
+                color: rgba(94, 89, 89, 0.712);
+            }
+        }
+
+        .collection, .services {
+
+            a:first-child {
+                font-size: 1.2rem;
+                // margin-left: 0.5rem;
+                border-bottom: 3px solid white;
+            }
+
+            a:not(:first-child) {
+                // margin-left: 1.5rem;
+                font-size: 0.8rem;
+            }
+
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                margin-top: 0.5rem;
+            }
+        }
+
+    }
+}
+    
+
