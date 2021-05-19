@@ -18,6 +18,9 @@ import { FooterComponent } from './footer/footer.component';
 import { routing } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { faTruck } from '@fortawesome/free-solid-svg-icons/faTruck';
+import { StoreModule } from './modal/store.module';
+import { CommonModule } from '@angular/common';
+import { StoreComponent } from './store/store.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { faTruck } from '@fortawesome/free-solid-svg-icons/faTruck';
     HomeComponent,
     NavBar,
     SandBoxComponent,
-    FooterComponent
+    FooterComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,9 @@ import { faTruck } from '@fortawesome/free-solid-svg-icons/faTruck';
     BrowserAnimationsModule,
     ModalModule,
     RouterModule,
-    routing
+    routing,
+    StoreModule,
+    CommonModule
   ],
   providers: [DropService],
   bootstrap: [AppComponent]

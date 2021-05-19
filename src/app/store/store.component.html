@@ -1,0 +1,26 @@
+<div class="container-fluid mb-4" (click)="roll()">
+    <div class="row">
+        <div>
+            <select (change)="getCate($event.target)" name="cate" id="cate">
+                <option value="">All</option>
+                <option value="oil-drum">Oil Drums</option>
+                <option value="licence">Licence Plates</option>
+                <option value="signs">Vintage Signs</option>
+                <option value="recording">Recording Plates</option>
+                <option value="caps">Bottle Caps</option>
+            </select>
+        </div>
+    </div>
+    <div class="row pt-4">
+        <div *ngFor="let product of getProducts(); let i = index;" [ngClass]="{'mt-3' : i >= 2, 'mt-sm-0' : i == 2, 'mt-md-0' : i == 2 || i == 3}" class="col-6 col-sm-4 col-md-3">
+            <div class="show-case">
+                <img src="../../assets/image/plate01resized.jpg" alt="product">
+                <div>
+                    <h4>{{product.name}}</h4>
+                    <h5>{{product.price}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
