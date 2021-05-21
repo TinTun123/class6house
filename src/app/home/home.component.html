@@ -1,100 +1,16 @@
 <div class="cu-container" (click)="roll()">
     <div *ngIf="screenWidth > 1060" #popup id="popup">
         <div id="collection-wrapper">
-            <a #link (mouseover)="openModal('modal-1')" >Collections <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
+            <a #link (click)="openModal('modal-1')" href="##">Collections <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
         </div>
 
         <div  id="aboutus-wrapper">
-            <a (mouseover)="openModal('modal-2')" #link href="##">About us <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
-        </div>
-
-        <div id="fb-icon">
-            <a #link href="##"><fa-icon [icon]="['fab', 'facebook-square']"></fa-icon> / <fa-icon [icon]="['fab', 'instagram-square']"></fa-icon></a>
+            <a (click)="openModal('modal-2')" #link href="##">About us <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
         </div>
     </div>
 
     <div id="carousel" class="row">
         <app-carousel [slides]="slides"></app-carousel>
-    </div>
-
-
-    <h1>Store Collection</h1>
-    <div class="store-collection">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 col-sm-4 col-md-4">
-                    <div class="tempnails">
-                        <a routerLink="/store">
-                            <img src="../../assets/ss/route 66.PNG" alt="">
-                            <div>
-                                <h2>Route 66 Signs</h2>
-                                <small>Vintage Tin Signs</small>
-                            </div>
-                        </a>
-                    </div>                    
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-4">
-                    <div class="tempnails">
-                        <a routerLink="/store">
-                            <img src="../../assets/ss/licence plates.PNG" alt="">
-                            <div>
-                                <h2>Hanging License Plates</h2>
-                                <small>License plates</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-6 mt-5 col-sm-4 mt-sm-0 col-md-4 mt-md-0">
-                    <div class="tempnails">
-                        <a routerLink="/store">
-                            <img src="../../assets/ss/caps.PNG" alt="">
-                            <div>
-                                <h2>Bottle Caps</h2>
-                                <small>Wall Decoration Bottle Caps</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-6  mt-5 col-sm-4 col-md-4 mt-md-5">
-                    <div class="tempnails">
-                        <a routerLink="/store">
-                            <img src="../../assets/ss/garage sign.PNG" alt="">
-                            <div>
-                                <h2>Garage Signs</h2>
-                                <small>Vintage Garage Signs</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
-                    <div class="tempnails">
-                        <a routerLink="/store">
-                            <img src="../../assets/ss/oil drum.PNG" alt="">
-                            <div>
-                                <h2>Oil Drums</h2>
-                                <small>Stool</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
-                    <div class="tempnails">
-                        <a  routerLink="/store">
-                            <img src="../../assets/ss/recording plates.PNG" alt="">
-                            <div>
-                                <h2>Vinyl Record</h2>
-                                <small>Wall Decoration LP</small>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 
@@ -106,6 +22,11 @@
                     <a id="img01" href="##">
                         <img src="../../assets/ss/product 02.PNG" alt="image">
                         <h2>Collections</h2>
+
+                        <picture>
+                            <source>
+                            
+                        </picture>
                     </a>
                 </div>
 
@@ -119,11 +40,407 @@
         </div>
     </div>
 
+
+    <h1>Store Collection</h1>
+    <div class="store-collection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-4">
+                    <div (click)="openModal('route-modal')" class="tempnails">
+                        <a href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/route.PNG">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/route.PNG">
+                                <img src="../../assets/ss/route.PNG " alt="image">
+                            </picture>
+                            <div>
+                                <h2>Route 66 Signs</h2>
+                                <small>Vintage Tin Signs</small>
+                            </div>
+                        </a>
+                    </div>                    
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-4">
+                    <div (click)="openModal('licence-modal')" class="tempnails">
+                        <a href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/licence.PNG">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/licence.PNG">
+                                <img src="../../assets/ss/DES/route 66.PNG" alt="Flowers">
+                            </picture>
+                            <div>
+                                <h2>Hanging License Plates</h2>
+                                <small>License plates</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 mt-sm-0 col-md-4 mt-md-0">
+                    <div (click)="openModal('caps-modal')" class="tempnails">
+                        <a href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/caps.PNG">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/caps.PNG">
+                                <img src="../../assets/ss/caps.PNG" alt="Flowers">
+                            </picture>
+                            <div>
+                                <h2>Bottle Caps</h2>
+                                <small>Wall Decoration Bottle Caps</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6  mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div (click)="openModal('garage-modal')" class="tempnails">
+                        <a href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/garage.PNG">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/garage.PNG">
+                                <img src="../../assets/ss/gargae.PNG" alt="Flowers">
+                            </picture>
+                            <div>
+                                <h2>Garage Signs</h2>
+                                <small>Vintage Garage Signs</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div (click)="openModal('drum-modal')" class="tempnails">
+                        <a href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/drum.PNG">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/drum.PNG">
+                                <img src="../../assets/ss/drum.PNG" alt="Flowers">
+                            </picture>
+                            <div>
+                                <h2>Oil Drums</h2>
+                                <small>Stool</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div (click)="openModal('recording-modal')" class="tempnails">
+                        <a  href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/recording.PNG">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/recording.PNG">
+                                <img src="../../assets/ss/DES/recording.PNG" alt="">
+                            </picture>
+                            <div>
+                                <h2>Vinyl Record</h2>
+                                <small>Wall Decoration LP</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div class="tempnails">
+                        <a  href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/">
+                                <img src="../../assets/ss/DES/" alt="">
+                            </picture>
+                            <div>
+                                <h2>Category</h2>
+                                <small>Description</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div class="tempnails">
+                        <a  href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/">
+                                <img src="../../assets/ss/DES/" alt="">
+                            </picture>
+                            <div>
+                                <h2>Category</h2>
+                                <small>Description</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
+                    <div class="tempnails">
+                        <a  href="##">
+                            <picture>
+                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/">
+                                <source media="(max-width:799px)" srcset="../../assets/ss/">
+                                <img src="../../assets/ss/DES/" alt="">
+                            </picture>
+                            <div>
+                                <h2>Category</h2>
+                                <small>Description</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </div>
 
 
-<to-modal id="modal-1">
+<to-modal id="modal-1" opacity="black">
+    <div class="cu-modal-body">
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate01resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate02resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate03resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate04resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #div>
+                    <img src="../../assets/image/plate05resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </to-modal>
 
-<to-modal id="modal-2">
+<to-modal id="modal-2" opacity="black">
+    <div class="cu-modal-body">
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate01resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate02resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate03resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="../../assets/image/plate04resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #div>
+                    <img src="../../assets/image/plate05resized.jpg" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</to-modal>
+
+<to-modal id="route-modal" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <div class="img">
+            <picture>
+                <source media="(min-width:800px)" srcset="../../assets/ss/DES/route.PNG">
+                <source media="(max-width:799px)" srcset="../../assets/ss/route.PNG">
+                <img src="../../assets/ss/route.PNG " alt="image">
+            </picture>
+        </div>
+        <div class="text">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+            </p>
+        </div>
+
+    </div>
+</to-modal>
+
+<to-modal id="licence-modal" opacity="rgba(0, 0, 0, 0.6)">
+        <div class="cu-modal-body">
+            <div class="img">
+                <picture>
+                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/licence.PNG">
+                    <source media="(max-width:799px)" srcset="../../assets/ss/licence.PNG">
+                    <img src="../../assets/ss/DES/route 66.PNG" alt="Flowers">
+                </picture>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+                </p>
+            </div>
+    
+        </div>
+    
+</to-modal>
+
+<to-modal id="caps-modal" opacity="rgba(0, 0, 0, 0.6)">
+        <div class="cu-modal-body">
+            <div class="img">
+                <picture>
+                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/caps.PNG">
+                    <source media="(max-width:799px)" srcset="../../assets/ss/caps.PNG">
+                    <img src="../../assets/ss/caps.PNG" alt="Flowers">
+                </picture>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+                </p>
+            </div>
+    
+        </div>
+    
+</to-modal>
+
+<to-modal id="garage-modal" opacity="rgba(0, 0, 0, 0.6)">
+        <div class="cu-modal-body">
+            <div class="img">
+                <picture>
+                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/garage.PNG">
+                    <source media="(max-width:799px)" srcset="../../assets/ss/garage.PNG">
+                    <img src="../../assets/ss/gargae.PNG" alt="Flowers">
+                </picture>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+                </p>
+            </div>
+    
+        </div>
+    
+</to-modal>
+
+<to-modal id="drum-modal" opacity="rgba(0, 0, 0, 0.6)">
+        <div class="cu-modal-body">
+            <div class="img">
+                <picture>
+                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/drum.PNG">
+                    <source media="(max-width:799px)" srcset="../../assets/ss/drum.PNG">
+                    <img src="../../assets/ss/drum.PNG" alt="Flowers">
+                </picture>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+                </p>
+            </div>
+    
+        </div>
+    
+</to-modal>
+
+<to-modal id="recording-modal" opacity="rgba(0, 0, 0, 0.6)">
+        <div class="cu-modal-body">
+            <div class="img">
+                <picture>
+                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/recording.PNG">
+                    <source media="(max-width:799px)" srcset="../../assets/ss/recording.PNG">
+                    <img src="../../assets/ss/DES/recording.PNG" alt="">
+                </picture>
+            </div>
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+                </p>
+            </div>
+    
+        </div>
+    
 </to-modal>

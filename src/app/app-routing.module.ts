@@ -8,7 +8,6 @@ import { UnderCon } from './underconstruction/underconstruction';
 
 const routes: Routes = [
   {path: "undercon", component: UnderCon},
-  {path: "store", component: StoreComponent},
   {path: "", component : HomeComponent}
 
 ];

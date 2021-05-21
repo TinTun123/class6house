@@ -25,7 +25,11 @@ export class HomeComponent implements OnInit {
     }
     ngOnInit(): void {
         this.modalService.swiftColor().subscribe(c => {
-            if (c) {
+            if (c && this.popup) {
+
+                console.log("off");
+                
+                
                 this.popup.nativeElement.style.backgroundColor = 'white';
 
                 this.link.forEach(each => {
@@ -47,11 +51,18 @@ export class HomeComponent implements OnInit {
     roll() {
         this.dropService.updataDataSelection(true)
     }
+
+    changePopupColor() {
+
+    }
     
 
     openModal(id : string) {
         
-        this.popup.nativeElement.style.backgroundColor = 'black';
+        if (this.popup) {
+            this.popup.nativeElement.style.backgroundColor = 'black';
+        }
+        
 
         this.link.forEach(each => {
             let ele = each.nativeElement;

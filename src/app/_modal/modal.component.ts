@@ -13,6 +13,7 @@ import { hoverAniTrigger } from "./hover.animation";
 export class ToModal implements OnInit, OnDestroy, AfterViewInit {
 
     @Input() id : string;
+    @Input() opacity : string;
     private element : any;
     public aniTrigger: string = '';
 
@@ -29,18 +30,33 @@ export class ToModal implements OnInit, OnDestroy, AfterViewInit {
 
         if(!this.id) {
             return
-        }
-        
+        }     
 
         document.body.appendChild(this.element);
 
-        this.element.addEventListener("mouseover", (e : any) => {
+
+        if (this.id == "modal-1" || this.id == "modal-2") {
+            this.element.addEventListener("mouseover", (e : any) => {
             
-            if (e.target.classList.contains("cu-modal-background")) {
-                this.modalService.borderOver();
-                this.close();
-            }
-        })
+                if (e.target.classList.contains("cu-modal-background")) {
+                    this.modalService.borderOver();
+                    this.close();
+                }
+            })
+        } else {
+            this.element.addEventListener("click", (e : any) => {
+            
+                if (e.target.classList.contains("cu-modal-background")) {
+                    this.modalService.borderOver();
+                    this.close();
+                }
+            })
+        }
+        
+        
+
+
+        this.element.children[0].style.backgroundColor = this.opacity;
 
         this.modalService.add(this);
         
@@ -56,12 +72,12 @@ export class ToModal implements OnInit, OnDestroy, AfterViewInit {
         this.element.style.visibility = "visible";
         this.element.style.opacity = 1;
         this.aniTrigger = "appear"
-        document.body.classList.add("modal-open");
+        document.children[0].classList.add("modal-open");
     }
 
     close() {
         this.element.style.display = "none";
-        document.body.classList.remove("modal-open");
+        document.children[0].classList.remove("modal-open");
         this.aniTrigger = "disappear";
     }
 
