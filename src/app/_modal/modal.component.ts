@@ -33,6 +33,8 @@ export class ToModal implements OnInit, OnDestroy, AfterViewInit {
         }     
 
         document.body.appendChild(this.element);
+        console.log(this.element);
+        
 
 
         if (this.id == "modal-1" || this.id == "modal-2") {

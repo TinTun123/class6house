@@ -13,7 +13,7 @@
     }
 
     .products {
-        a {
+        #img01, #img02 {
             display: block;
             position: relative;
             background-color: black;
@@ -23,7 +23,7 @@
                 height: 400px;
                 width: 100%;
                 opacity: 1;
-                transition: opacity 0.5s linear;
+                transition: opacity 0.2s linear;
             }
 
             h2 {
@@ -32,10 +32,17 @@
                 left: 0%;
                 right: 0%;
                 color: white;
+                text-align: center;
             }
         }
 
-        a:hover {
+        #img01:hover, #img01:active {
+            img {
+                opacity: 0;
+            }
+        }
+
+        #img02:hover, #img02:active {
             img {
                 opacity: 0;
             }
@@ -92,7 +99,7 @@
                 transition: filter 0.2s linear;
             }
 
-            img:hover {
+            img:hover, img:active {
                 filter: brightness(60%);
             }
         }
@@ -105,7 +112,7 @@
 }
 
 #modal-1,  #modal-2 {
-    display: grid;
+    display: none;
 
     .cu-modal-body {
         position: relative;
