@@ -24,6 +24,11 @@ export class NavBar {
         this.URL = this.getURL();
     }
 
+    print(para : any) {
+        console.log(para);
+        
+    }
+
     getURL() :string{
         let userAgent = window.navigator.userAgent;
         if(/android/i.test(userAgent)) {
