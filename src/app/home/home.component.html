@@ -20,7 +20,8 @@
             <div class="row">
                 <div  class="col-xs-12 mb-4 mb-md-0 col-md-8">
                     <a id="img01" href="##">
-                        <img src="../../assets/ss/product 02.PNG" alt="image">
+                        <advanced-image #cloudImg class="img" [cldImg]="product02Img"></advanced-image>
+                        <!-- <img src="../../assets/ss/product 02.PNG" alt="image"> -->
                         <h2>Collections</h2>
 
                         <picture>
@@ -32,7 +33,8 @@
 
                 <div  class="col-xs-12 col-md-4">
                     <a id="img02" href="##">
-                        <img src="../../assets/image/route66_02.jpg" alt="">
+                        <advanced-image #cloudImg class="img" [cldImg]="routeImg"></advanced-image>
+                        <!-- <img class="img" src="../../assets/image/route66_02.jpg" alt=""> -->
                         <h2>Browse Our Vintages</h2>
                     </a>
                 </div>
@@ -49,9 +51,9 @@
                     <div (click)="openModal('route-modal')" class="tempnails">
                         <a href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/route.PNG">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/route.PNG">
-                                <img src="../../assets/ss/route.PNG " alt="image">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928643/DESstore/routeDES_cszaeo.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927321/route_fe9upp.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927321/route_fe9upp.jpg" alt="image">
                             </picture>
                             <div>
                                 <h2>Route 66 Signs</h2>
@@ -65,9 +67,9 @@
                     <div (click)="openModal('licence-modal')" class="tempnails">
                         <a href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/licence.PNG">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/licence.PNG">
-                                <img src="../../assets/ss/DES/route 66.PNG" alt="Flowers">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928644/DESstore/licenceDES_cnbetr.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927228/licence_hr4yhz.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927228/licence_hr4yhz.jpg" alt="Flowers">
                             </picture>
                             <div>
                                 <h2>Hanging License Plates</h2>
@@ -81,9 +83,9 @@
                     <div (click)="openModal('caps-modal')" class="tempnails">
                         <a href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/caps.PNG">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/caps.PNG">
-                                <img src="../../assets/ss/caps.PNG" alt="Flowers">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928645/DESstore/capsDES_kxjkwl.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927226/caps_jm2nb0.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927226/caps_jm2nb0.jpg" alt="Flowers">
                             </picture>
                             <div>
                                 <h2>Bottle Caps</h2>
@@ -97,9 +99,9 @@
                     <div (click)="openModal('garage-modal')" class="tempnails">
                         <a href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/garage.PNG">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/garage.PNG">
-                                <img src="../../assets/ss/gargae.PNG" alt="Flowers">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928643/DESstore/garageDES_xe1pr2.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927225/garage_z2rgcq.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927225/garage_z2rgcq.jpg" alt="Flowers">
                             </picture>
                             <div>
                                 <h2>Garage Signs</h2>
@@ -113,9 +115,9 @@
                     <div (click)="openModal('drum-modal')" class="tempnails">
                         <a href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/drum.PNG">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/drum.PNG">
-                                <img src="../../assets/ss/drum.PNG" alt="Flowers">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928645/DESstore/drumDES_ovjwme.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927225/drums_q1z9eb.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927225/drums_q1z9eb.jpg" alt="Flowers">
                             </picture>
                             <div>
                                 <h2>Oil Drums</h2>
@@ -129,9 +131,9 @@
                     <div (click)="openModal('recording-modal')" class="tempnails">
                         <a  href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/recording.PNG">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/recording.PNG">
-                                <img src="../../assets/ss/DES/recording.PNG" alt="">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928643/DESstore/recordingDES_x79stm.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927225/recording_wno6ov.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927225/recording_wno6ov.jpg" alt="">
                             </picture>
                             <div>
                                 <h2>Vinyl Record</h2>
@@ -142,12 +144,12 @@
                 </div>
 
                 <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
-                    <div class="tempnails">
+                    <div (click)="openModal('caps-chair')" class="tempnails">
                         <a  href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/">
-                                <img src="../../assets/ss/DES/" alt="">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928644/DESstore/chairDES_hrebcm.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621929269/chair_pq3p3e.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621929269/chair_pq3p3e.jpg" alt="">
                             </picture>
                             <div>
                                 <h2>Category</h2>
@@ -158,12 +160,12 @@
                 </div>
 
                 <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
-                    <div class="tempnails">
+                    <div (click)="openModal('radio-modal')" class="tempnails">
                         <a  href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/">
-                                <img src="../../assets/ss/DES/" alt="">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928642/DESstore/radioDES_rh0vju.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621929268/untique_sr2mv9.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621929268/untique_sr2mv9.jpg" alt="">
                             </picture>
                             <div>
                                 <h2>Category</h2>
@@ -174,12 +176,12 @@
                 </div>
 
                 <div class="col-6 mt-5 col-sm-4 col-md-4 mt-md-5">
-                    <div class="tempnails">
+                    <div (click)="openModal('industrial-modal')" class="tempnails">
                         <a  href="##">
                             <picture>
-                                <source media="(min-width:800px)" srcset="../../assets/ss/DES/">
-                                <source media="(max-width:799px)" srcset="../../assets/ss/">
-                                <img src="../../assets/ss/DES/" alt="">
+                                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928642/DESstore/industrialDES_f9jja5.jpg">
+                                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621929268/industrialdecor_nro835.jpg">
+                                <img src="https://res.cloudinary.com/class6house/image/upload/v1621929268/industrialdecor_nro835.jpg" alt="">
                             </picture>
                             <div>
                                 <h2>Category</h2>
@@ -332,11 +334,11 @@
 
 <to-modal id="route-modal" opacity="rgba(0, 0, 0, 0.6)">
     <div class="cu-modal-body">
-        <div class="img">
+        <div class="img-modal">
             <picture>
-                <source media="(min-width:800px)" srcset="../../assets/ss/DES/route.PNG">
-                <source media="(max-width:799px)" srcset="../../assets/ss/route.PNG">
-                <img src="../../assets/ss/route.PNG " alt="image">
+                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928643/DESstore/routeDES_cszaeo.jpg">
+                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927321/route_fe9upp.jpg">
+                <img src="https://res.cloudinary.com/class6house/image/upload/v1621927321/route_fe9upp.jpg" alt="image">
             </picture>
         </div>
         <div class="text">
@@ -350,11 +352,11 @@
 
 <to-modal id="licence-modal" opacity="rgba(0, 0, 0, 0.6)">
         <div class="cu-modal-body">
-            <div class="img">
+            <div class="img-modal">
                 <picture>
-                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/licence.PNG">
-                    <source media="(max-width:799px)" srcset="../../assets/ss/licence.PNG">
-                    <img src="../../assets/ss/DES/route 66.PNG" alt="Flowers">
+                    <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928644/DESstore/licenceDES_cnbetr.jpg">
+                    <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927228/licence_hr4yhz.jpg">
+                    <img src="https://res.cloudinary.com/class6house/image/upload/v1621927228/licence_hr4yhz.jpg" alt="Flowers">
                 </picture>
             </div>
             <div class="text">
@@ -369,11 +371,11 @@
 
 <to-modal id="caps-modal" opacity="rgba(0, 0, 0, 0.6)">
         <div class="cu-modal-body">
-            <div class="img">
+            <div class="img-modal">
                 <picture>
-                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/caps.PNG">
-                    <source media="(max-width:799px)" srcset="../../assets/ss/caps.PNG">
-                    <img src="../../assets/ss/caps.PNG" alt="Flowers">
+                    <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928645/DESstore/capsDES_kxjkwl.jpg">
+                    <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927226/caps_jm2nb0.jpg">
+                    <img src="https://res.cloudinary.com/class6house/image/upload/v1621927226/caps_jm2nb0.jpg" alt="Flowers">
                 </picture>
             </div>
             <div class="text">
@@ -388,11 +390,11 @@
 
 <to-modal id="garage-modal" opacity="rgba(0, 0, 0, 0.6)">
         <div class="cu-modal-body">
-            <div class="img">
+            <div class="img-modal">
                 <picture>
-                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/garage.PNG">
-                    <source media="(max-width:799px)" srcset="../../assets/ss/garage.PNG">
-                    <img src="../../assets/ss/gargae.PNG" alt="Flowers">
+                    <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928643/DESstore/garageDES_xe1pr2.jpg">
+                    <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927225/garage_z2rgcq.jpg">
+                    <img src="https://res.cloudinary.com/class6house/image/upload/v1621927225/garage_z2rgcq.jpg" alt="Flowers">
                 </picture>
             </div>
             <div class="text">
@@ -407,11 +409,11 @@
 
 <to-modal id="drum-modal" opacity="rgba(0, 0, 0, 0.6)">
         <div class="cu-modal-body">
-            <div class="img">
+            <div class="img-modal">
                 <picture>
-                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/drum.PNG">
-                    <source media="(max-width:799px)" srcset="../../assets/ss/drum.PNG">
-                    <img src="../../assets/ss/drum.PNG" alt="Flowers">
+                    <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928645/DESstore/drumDES_ovjwme.jpg">
+                    <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927225/drums_q1z9eb.jpg">
+                    <img src="https://res.cloudinary.com/class6house/image/upload/v1621927225/drums_q1z9eb.jpg" alt="Flowers">
                 </picture>
             </div>
             <div class="text">
@@ -426,11 +428,11 @@
 
 <to-modal id="recording-modal" opacity="rgba(0, 0, 0, 0.6)">
         <div class="cu-modal-body">
-            <div class="img">
+            <div class="img-modal">
                 <picture>
-                    <source media="(min-width:800px)" srcset="../../assets/ss/DES/recording.PNG">
-                    <source media="(max-width:799px)" srcset="../../assets/ss/recording.PNG">
-                    <img src="../../assets/ss/DES/recording.PNG" alt="">
+                    <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928643/DESstore/recordingDES_x79stm.jpg">
+                    <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621927225/recording_wno6ov.jpg">
+                    <img src="https://res.cloudinary.com/class6house/image/upload/v1621927225/recording_wno6ov.jpg" alt="">
                 </picture>
             </div>
             <div class="text">
@@ -441,4 +443,63 @@
     
         </div>
     
+</to-modal>
+
+<to-modal id="caps-chair" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <div class="img-modal">
+            <picture>
+                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928644/DESstore/chairDES_hrebcm.jpg">
+                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621929269/chair_pq3p3e.jpg">
+                <img src="https://res.cloudinary.com/class6house/image/upload/v1621929269/chair_pq3p3e.jpg" alt="">
+            </picture>
+        </div>
+        <div class="text">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+            </p>
+        </div>
+
+    </div>
+
+</to-modal>
+
+
+<to-modal id="radio-modal" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <div class="img-modal">
+            <picture>
+                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928642/DESstore/radioDES_rh0vju.jpg">
+                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621929268/untique_sr2mv9.jpg">
+                <img src="https://res.cloudinary.com/class6house/image/upload/v1621929268/untique_sr2mv9.jpg" alt="">
+            </picture>
+        </div>
+        <div class="text">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+            </p>
+        </div>
+
+    </div>
+
+</to-modal>
+
+
+<to-modal id="industrial-modal" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <div class="img-modal">
+            <picture>
+                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621928642/DESstore/industrialDES_f9jja5.jpg">
+                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1621929268/industrialdecor_nro835.jpg">
+                <img src="https://res.cloudinary.com/class6house/image/upload/v1621929268/industrialdecor_nro835.jpg" alt="">
+            </picture>
+        </div>
+        <div class="text">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis esse libero consequuntur unde aliquid fuga dicta officiis rem eaque alias, maiores praesentium magni consectetur dolorum quidem nemo iusto. Magni.                
+            </p>
+        </div>
+
+    </div>
+
 </to-modal>

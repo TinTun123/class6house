@@ -21,6 +21,8 @@ import { faTruck } from '@fortawesome/free-solid-svg-icons/faTruck';
 import { StoreModule } from './modal/store.module';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from './store/store.component';
+import { AboutUsComponent } from './aboutus/aboutus.component';
+import { CloudinaryModule } from "@cloudinary/angular";
 
 @NgModule({
   declarations: [
@@ -30,9 +32,11 @@ import { StoreComponent } from './store/store.component';
     NavBar,
     SandBoxComponent,
     FooterComponent,
-    StoreComponent
+    StoreComponent,
+    AboutUsComponent
   ],
   imports: [
+    CloudinaryModule,
     BrowserModule,
     FontAwesomeModule,
     BrowserAnimationsModule,

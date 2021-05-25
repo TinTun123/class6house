@@ -1,0 +1,31 @@
+.div {
+    margin-top: 56px;
+    position: relative;
+
+    .img-about {
+        width: 100%;
+        filter: brightness(50%);
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .aboutus {
+        position: absolute;
+        top: 10%;
+        color: white;
+        width: 100vw;
+        font-weight: 800;
+        // font-size: 1rem;
+        font-size: 2vmin;
+        padding: 1rem;
+    
+    }
+    @media screen and (min-width:800px) {
+        .aboutus {
+            font-size: 3vmin;
+        }
+    }
+
+}

@@ -17,14 +17,10 @@
             display: block;
             position: relative;
             background-color: black;
-            
+            height: 400px;
 
-            img {
-                height: 400px;
-                width: 100%;
-                opacity: 1;
-                transition: opacity 0.2s linear;
-            }
+            // opacity: 1;
+            // transition: opacity 0.2s linear;
 
             h2 {
                 position: absolute;
@@ -194,7 +190,15 @@
 
 }
 
-#route-modal, #caps-modal, #licence-modal, #garage-modal, #drum-modal, #recording-modal {
+#route-modal, 
+#caps-modal,
+#licence-modal, 
+#garage-modal, 
+#drum-modal, 
+#recording-modal, 
+#caps-chair, 
+#radio-modal, 
+#industrial-modal {
     .cu-modal-body {
         position: relative;
         top: 70px;
@@ -202,7 +206,7 @@
         height: auto;
         width: 90%;
 
-        .img {
+        .img-modal {
             width: 50%;
             height: 60%;
             float: left;
