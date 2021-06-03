@@ -22,7 +22,6 @@ import { StoreModule } from './modal/store.module';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from './store/store.component';
 import { AboutUsComponent } from './aboutus/aboutus.component';
-import { CloudinaryModule } from "@cloudinary/angular";
 import { LocationComponent } from './location/location.component';
 import { ImgModal } from './img-modal/imgModal.component';
 import { modalData } from './home/imgModal.data';
@@ -44,7 +43,6 @@ import { faDotCircle } from '@fortawesome/free-solid-svg-icons/faDotCircle';
     ProductComponent
   ],
   imports: [
-    CloudinaryModule,
     BrowserModule,
     FontAwesomeModule,
     BrowserAnimationsModule,

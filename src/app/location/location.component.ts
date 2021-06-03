@@ -1,5 +1,4 @@
 import { AfterViewInit, Component } from "@angular/core";
-import { ico } from "@cloudinary/base/qualifiers/format";
 import * as L from "leaflet";
 
 @Component({
