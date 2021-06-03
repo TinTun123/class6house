@@ -22,16 +22,16 @@ export class ProductComponent {
         type: "type01",
         place: "place01",
         src : {
-            DES: "assets/drumDES01.jpg",
-            mobile : "assets/herledrum.jpg"
+            DES: "https://res.cloudinary.com/class6house/image/upload/v1622709573/DESstore/drumDES01_pjqmyp.jpg",
+            mobile : "https://res.cloudinary.com/class6house/image/upload/v1622709724/herledrum_e1eyws.jpg"
         }
     }, {
         name: "name02",
         type: "type02",
         place: "place02",
         src : {
-            DES: "assets/drumDES02.jpg",
-            mobile : "assets/forddrum.jpg"
+            DES: "https://res.cloudinary.com/class6house/image/upload/v1622709573/DESstore/drumDES02_jjprsl.jpg",
+            mobile : "https://res.cloudinary.com/class6house/image/upload/v1622709724/forddrum_rkhbiz.jpg"
         }
     },
     {
@@ -39,8 +39,8 @@ export class ProductComponent {
         type: "type03",
         place: "place03",
         src : {
-            DES: "assets/drumDES03.jpg",
-            mobile : "assets/jackdrum.jpg"
+            DES: "https://res.cloudinary.com/class6house/image/upload/v1622709573/DESstore/drumDES03_w2xeyw.jpg",
+            mobile : "https://res.cloudinary.com/class6house/image/upload/v1622709724/jackdrum_eaftm5.jpg"
         }
     }
 ]
