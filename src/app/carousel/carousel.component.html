@@ -1,12 +1,20 @@
 <!-- Carousel -->
 
 <div class="carousel">
-    <ng-container *ngFor="let slide of slides; let i = index">
-        <img
-        *ngIf="i == currentSlide" 
-        [src]="slide.src" 
-        alt="image" 
-        class="slide"
-        @carouselAnimation>
+    <ng-container *ngFor="let modal of modals; let i = index">
+        <img-modal *ngIf="i == currentModal" class="slide" [imgModalAttr]="modal" @carouselAnimation></img-modal>
     </ng-container>
+
+    <button class="control prev" (click)="onPreviousClick()">
+        <span class="arrow left"></span>
+      </button>
+      <button class="control next" (click)="onNextClick()">
+        <span class="arrow right"></span>
+      </button>
+
+      <div class="circles">
+        <span class="c1" [ngStyle]="{'background-color': 0 == currentModal ? 'white' : 'black'}"></span>
+        <span class="c2" [ngStyle]="{'background-color': 1 == currentModal ? 'white' : 'black'}"></span>
+        <span class="c2" [ngStyle]="{'background-color': 2 == currentModal ? 'white' : 'black'}"></span>
+      </div>
 </div>

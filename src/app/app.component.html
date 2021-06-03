@@ -1,5 +1,153 @@
 <cm-nav-bar></cm-nav-bar>
+<!-- <div *ngIf="screenWidth > 1060" #popup id="popup">
+    <div id="collection-wrapper">
+        <a #link (click)="openModal('modal-1')" href="##">Collections <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
+    </div>
 
-<router-outlet></router-outlet>
+    <div  id="aboutus-wrapper">
+        <a (click)="openModal('modal-2')" #link href="##">About us <fa-icon [icon]="['fas', 'arrow-down']"></fa-icon></a>
+    </div>
+</div> -->
+
+
+<div class="cover">
+    <img src="https://res.cloudinary.com/class6house/image/upload/v1621930172/DESstore/cover_4_lql3of.jpg" alt="cover">
+</div>
+
+<router-outlet (activate)="onActivate($event)"></router-outlet>
 
 <cu-footer></cu-footer>
+
+<to-modal id="modal-1" opacity="black">
+    <div class="cu-modal-body">
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #div>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</to-modal>
+
+<to-modal id="modal-2" opacity="black">
+    <div class="cu-modal-body">
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #divs>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+
+
+        </div>
+        <div>
+            <a href="##">
+                <div #div>
+                    <img src="" alt="image">
+
+                    <div class="text">
+                        <h2>Image</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</to-modal>

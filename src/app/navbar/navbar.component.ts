@@ -38,17 +38,10 @@ export class NavBar {
             
             return this.sanitizier.bypassSecurityTrustUrl(this.IphoneURL);
         } else {
-            console.log("browserURL");
             
             return this.fbURL;
         }
     }
-
-    // @HostListener('window:resize', ['$event'])
-    // getScreenSize(para ?: any) {
-    //     this.screenWidth = window.innerWidth;      
-    // }
-
     switch() {
         this.drop = !this.drop;
     }

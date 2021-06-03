@@ -1,0 +1,28 @@
+.container-fluid {
+  .row {
+    margin: 5rem 0;
+
+    h1 {
+      color: black;
+      font-weight: 700;
+      text-align: center;
+      width: 50%;
+      margin: auto;
+      border-bottom: solid 2px black;
+    }
+
+    .loca {
+      height: 60vh;
+    }
+
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

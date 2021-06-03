@@ -1,0 +1,14 @@
+<div class="img-modal">
+    <picture>
+        <source media="(min-width:800px)" [srcset]="imgModalAttr.src.DES">
+        <source media="(max-width:799px)" [srcset]="imgModalAttr.src.mobile">
+        <img [src]="imgModalAttr.src.mobile" alt="Flowers">
+    </picture>
+    <!-- <img [src]="imgModalAttr.src" alt="image"> -->
+    <div class="text">
+        <ul>
+            <li>Name - {{imgModalAttr.name}}</li>
+            <li>Location - {{imgModalAttr.place}}</li>           
+        </ul>
+    </div>
+</div>

@@ -1,7 +1,7 @@
     <ul id="top" [ngClass]="drop ? 'responsive' : ''">
         <li>
             <a routerLink="">Class6 House</a>         
-            <a #link [href]="getURL()">
+            <a #link href="https://www.facebook.com/class6house/">
                 <fa-icon [icon]="['fab', 'facebook-square']"></fa-icon>
             </a>
 
@@ -16,8 +16,5 @@
         <li *ngIf="screenWidth < 600"><a routerLink="/store">Store  <fa-icon class="arrow"  [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
         <li *ngIf="screenWidth < 600"><a href="##">Featured Project  <fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
         <li *ngIf="screenWidth < 600"><a routerLink="/aboutus">About us  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
-        <li *ngIf="screenWidth < 600"><a href="##">Class6 House members  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
-        <li *ngIf="screenWidth < 600"><a href="##">Contant Us  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
-        <li *ngIf="screenWidth < 600"><a href="##">The origine of Route 66  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
-        <li *ngIf="screenWidth < 600"><a href="##">Store Location  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
+        <li *ngIf="screenWidth < 600"><a routerLink="/location">Store Location  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
     </ul>

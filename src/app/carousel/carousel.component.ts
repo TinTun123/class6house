@@ -15,31 +15,27 @@ import { fadeIn, fadeOut, scaleIn, scaleOut } from './carousel.animation';
 })
 export class CarouselComponent implements OnInit {
 
-  @Input()slides : {src: string}[];
-  currentSlide : number = 0;
+  @Input()modals : any[];
+  currentModal : number = 0;
   constructor() { }
 
   onPreviousClick () {
-    const previus = this.currentSlide - 1;
-    this.currentSlide = previus < 0 ? this.slides.length - 1 : previus;
-    console.log("previous Clicked: now current slide is ", this.currentSlide);
+    const previus = this.currentModal - 1;
+    this.currentModal = previus < 0 ? this.modals.length - 1 : previus;
+    console.log(this.currentModal);
+    
     
   }
 
   onNextClick () {
-    const next = this.currentSlide + 1;
-    this.currentSlide = next === this.slides.length ? 0 : next;
-    console.log("next Clicked: now current slide is ", this.currentSlide);
+    const next = this.currentModal + 1;
+    this.currentModal = next === this.modals.length ? 0 : next;
+
     
   }
 
   ngOnInit(): void {
-  }
-
-  preLoadImages() {
-    for (const slide of this.slides){
-      new Image().src = slide.src;
-    }
+    
   }
 
 }

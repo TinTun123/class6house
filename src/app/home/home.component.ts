@@ -1,7 +1,8 @@
 import { Component, ElementRef, HostListener, ViewChild, OnInit, ViewChildren, QueryList, AfterViewInit } from "@angular/core";
-import { Cloudinary, CloudinaryImage } from "@cloudinary/base";
 import { DropService } from "../navbar/dropdown.service";
 import { ModalService } from "../_modal/modal.service";
+import { modalData } from "./imgModal.data";
+import { imgModal } from "./imgModal.modal";
 
 
 @Component({
@@ -11,38 +12,43 @@ import { ModalService } from "../_modal/modal.service";
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-
-    public product02Img : CloudinaryImage;
-    public routeImg : CloudinaryImage;
-    public routeDES : CloudinaryImage;
-    public route : CloudinaryImage;
-    public licenceDES : CloudinaryImage;
-    public licence : CloudinaryImage;
-    public capsDES : CloudinaryImage;
-    public caps: CloudinaryImage;
-    public garageDES: CloudinaryImage;
-    public garage: CloudinaryImage;
-    public drumDES: CloudinaryImage;
-    public drum: CloudinaryImage;
-    public recordingDES : CloudinaryImage;
-    public recording: CloudinaryImage;
-    public chairDES :CloudinaryImage;
-    public chair: CloudinaryImage;
-    public radioDES: CloudinaryImage;
-    public radio: CloudinaryImage;
-    public industrialDES : CloudinaryImage;
-    public industrial: CloudinaryImage;
-
-    public slides : {src: string}[] = [
-        {src: "https://res.cloudinary.com/class6house/image/upload/v1621930172/DESstore/cover_4_lql3of.jpg"}
-      ];
     public screenWidth : number;
+    public modalDatas : imgModal[];
+    public imgModal = [
+        {
+        name: "The Galleria 9",
+        type: "",
+        place: "N0.9, Kabar Aye Pagoda Road, Golden Valley Ward 2, Bahan Tsp, Yangon",
+        src : {
+            DES : "https://res.cloudinary.com/class6house/image/upload/v1622705802/DESstore/shop01DES_khi3oj.jpg",
+            mobile: "https://res.cloudinary.com/class6house/image/upload/v1622705676/g9-croped_jlsei1.jpg"
+        }
+    }, {
+        name: "TM Milk & Bakery (Bago Branch)",
+        type: "type02",
+        place: "Bago",
+        src : {
+            DES : "https://res.cloudinary.com/class6house/image/upload/v1622705808/DESstore/shop02DES_px49by.jpg",
+            mobile: "https://res.cloudinary.com/class6house/image/upload/v1622705667/tn-croped_lg4lb4.jpg"
+        }
+    },
+    {
+        name: "Route 63 Bar & Bistro",
+        type: "type03",
+        place: "N0.63, Koeminkochin Road, Shwe Gone Daing Bahan,Yangon",
+        src : {
+            DES : "https://res.cloudinary.com/class6house/image/upload/v1622705813/DESstore/shop03DES_h5vrfj.jpg",
+            mobile: "https://res.cloudinary.com/class6house/image/upload/v1622705648/r63-croped_jwncqd.jpg"
+        }
+    }
+]
     @ViewChild('popup')popup : ElementRef;
     @ViewChildren('link')link : QueryList<ElementRef>;
 
     constructor(private dropService : DropService, 
-        private modalService : ModalService) {
-        this.getScreenSize(); 
+        private modalService : ModalService,
+        private modalData : modalData) {
+            this.modalDatas = this.modalData.getData();
     }
     ngAfterViewInit(): void {
 
@@ -50,40 +56,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
     }
 
     ngOnInit(): void {
-        this.modalService.swiftColor().subscribe(c => {
-            if (c && this.popup) {
-                
-                this.popup.nativeElement.style.backgroundColor = 'white';
-
-                this.link.forEach(each => {
-                    let ele = each.nativeElement;
-                    ele.style.color = "black";
-                });
-            }
-            
-        })
-
-        const cld = new Cloudinary({
-            cloud: {
-                cloudName: "class6house"
-            }
-        })
-
-        this.product02Img = cld.image("product02_x0pplc");
-        this.routeImg = cld.image("route66_02_ybia06");
-        this.route = cld.image("route_fe9upp");
-        this.routeDES = cld.image("route_ibrgyk");
-
 
     }
 
     
 
 
-    @HostListener('window:resize', ['$event'])
-    getScreenSize(para ?: any) {
-        this.screenWidth = window.innerWidth;      
-    }
+
     roll() {
         this.dropService.updataDataSelection(true)
     }

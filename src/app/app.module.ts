@@ -23,6 +23,11 @@ import { CommonModule } from '@angular/common';
 import { StoreComponent } from './store/store.component';
 import { AboutUsComponent } from './aboutus/aboutus.component';
 import { CloudinaryModule } from "@cloudinary/angular";
+import { LocationComponent } from './location/location.component';
+import { ImgModal } from './img-modal/imgModal.component';
+import { modalData } from './home/imgModal.data';
+import { ProductComponent } from './products/product.component';
+import { faDotCircle } from '@fortawesome/free-solid-svg-icons/faDotCircle';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,10 @@ import { CloudinaryModule } from "@cloudinary/angular";
     SandBoxComponent,
     FooterComponent,
     StoreComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    LocationComponent,
+    ImgModal,
+    ProductComponent
   ],
   imports: [
     CloudinaryModule,
@@ -46,12 +54,21 @@ import { CloudinaryModule } from "@cloudinary/angular";
     StoreModule,
     CommonModule
   ],
-  providers: [DropService],
+  providers: [DropService, modalData],
   bootstrap: [AppComponent]
 })
 export class AppModule {
     constructor(library: FaIconLibrary) {
-      library.addIcons(faBars, faArrowRight, faArrowDown, faFacebookSquare, faInstagramSquare, faPhoneSquare, faTruck);
+      library.addIcons(
+          faBars, 
+          faArrowRight, 
+          faArrowDown, 
+          faFacebookSquare, 
+          faInstagramSquare, 
+          faPhoneSquare, 
+          faTruck,
+          faDotCircle
+        );
     
     }
 

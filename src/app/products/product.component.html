@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="row">
+        <div class="col-10 offset-1 offset-md-0 mb-4 mb-md-0 col-md-4 column">
+            <h2>Oil Drums</h2>
+            <div class="card">
+                <a (click)="openModal('customer')">
+                    <div class="img-block">
+                        <img src="https://res.cloudinary.com/class6house/image/upload/v1622705570/drum02_qxzzzb.jpg" alt="">
+                        
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+        <div class="col-6 col-md-4 column">
+            <h2>Industrial Pipes</h2>
+            <div class="card">
+
+                <a (click)="openModal('pipe')">
+                    <div class="img-block">
+                        <picture>
+                            <source media="(min-width:800px)" srcset="assets/industrialDES.jpg">
+                            <source media="(max-width:799px)" srcset="assets/industriaMOBILE.jpg">
+                            <img src="assets/industriaMOBILE.jpg" alt="">
+                        </picture>
+                        
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+        <div class="col-6 col-md-4 column">
+            <h2>Wooden Decor</h2>
+            <div class="card">
+
+                <a (click)="openModal('pallet')">
+                    <div class="img-block">
+                        <img src="assets/pallet.jpg" alt="">
+                        
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<to-modal id="customer" opacity="rgba(0, 0, 0, 0.8)">
+    <div class="cu-modal-body">
+
+        <app-carousel [modals]="imgModal">
+
+        </app-carousel>
+
+    </div>
+</to-modal>
+
+<to-modal id="pallet" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <h1>Pallet Box</h1>
+        <div class="img-modal">
+            <picture>
+                <source media="(min-width:800px)" srcset="assets/pallet.jpg">
+                <source media="(max-width:799px)" srcset="assets/pallet.jpg">
+                <img src="assets/pallet.jpg" alt="">
+            </picture>
+        </div>
+        <div class="text">
+
+            <ul>
+                <li>Class6 House Facebook Page</li>
+                <li>ph - 09 785050225, 09 764564974</li>
+            </ul>
+        </div>
+
+    </div>
+
+</to-modal>
+
+<to-modal id="pipe" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <h1>Industrial Decoration</h1>
+        <div class="img-modal">
+            <picture>
+                <source media="(min-width:800px)" srcset="assets/industrialDES.jpg">
+                <source media="(max-width:799px)" srcset="assets/industrialMOBILE.jpg">
+                <img src="assets/industriaMOBILE.jpg" alt="">
+            </picture>
+        </div>
+        <div class="text">
+
+            <ul>
+                <li>Class6 House Facebook Page</li>
+                <li>ph - 09 785050225, 09 764564974</li>
+            </ul>
+        </div>
+
+    </div>
+
+</to-modal>
