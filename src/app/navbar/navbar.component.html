@@ -13,8 +13,8 @@
         
             <fa-icon (click)="switch()" id="bars" [icon]="['fas', 'bars']"></fa-icon>
         </li>
-        <li *ngIf="screenWidth < 600"><a routerLink="/store">Store  <fa-icon class="arrow"  [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
-        <li *ngIf="screenWidth < 600"><a href="##">Featured Project  <fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
+        <li *ngIf="screenWidth < 600"><a routerLink="/">Store  <fa-icon class="arrow"  [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
+        <li *ngIf="screenWidth < 600"><a routerLink="/products">Featured Project  <fa-icon class="arrow" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
         <li *ngIf="screenWidth < 600"><a routerLink="/aboutus">About us  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
         <li *ngIf="screenWidth < 600"><a routerLink="/location">Store Location  <fa-icon *ngIf="drop" [icon]="['fas', 'arrow-right']"></fa-icon></a></li>
     </ul>
