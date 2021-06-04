@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: "products", component: ProductComponent},
   {path: "location", component: LocationComponent},
   {path: "aboutus", component: AboutUsComponent},
-  {path: "", component: HomeComponent}
+  {path: "**", component: HomeComponent}
 ];
 
 export const routing = RouterModule.forRoot(routes);
