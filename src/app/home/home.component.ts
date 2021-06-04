@@ -49,10 +49,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
         private modalService : ModalService,
         private modalData : modalData) {
             this.modalDatas = this.modalData.getData();
+
     }
     ngAfterViewInit(): void {
-
-        
+        window.scroll(0, 0);
     }
 
     ngOnInit(): void {

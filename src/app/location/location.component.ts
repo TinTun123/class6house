@@ -55,6 +55,7 @@ export class LocationComponent implements AfterViewInit {
 
     ngAfterViewInit(): void {
         this.initMap()
+        window.scroll(0, 0);
     }
     
 }

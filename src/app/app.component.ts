@@ -17,12 +17,11 @@ export class AppComponent {
   @ViewChildren('link')link : QueryList<ElementRef>;
 
   onActivate(para : any) {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+  
     
   }
+
+
 
   openModal(id : string) {
         
