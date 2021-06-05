@@ -27,11 +27,11 @@ export class LocationComponent implements AfterViewInit {
         background-repeat: no-repeat;
         background-size: cover;
 
-        width: 7rem;
-        height: 7rem;
+        width: 48px;
+        height: 48px;
         display: block;
-        left: 1rem;
-        top: -5rem;
+        left: 2rem;
+        top: -1rem;
         position: relative;
         border-radius: 7rem 7rem 0;
         // border: 1px solid #FFFFFF`;

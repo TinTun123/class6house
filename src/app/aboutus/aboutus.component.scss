@@ -1,37 +1,15 @@
 .div {
-    position: relative;
-
-    .img-about {
-        width: 100%;
-        filter: brightness(50%);
-        
-        img {
-            width: 100%;
-        }
-    }
 
     .aboutus {
-        position: absolute;
-        top: 10%;
-        color: white;
+        color: rgb(255, 255, 255);
         width: 100vw;
+        min-height: 70vh;
         font-weight: 800;
-        // font-size: 1rem;
         font-size: 1rem;
         padding: 1rem;
-    
+        background-image: url(https://res.cloudinary.com/class6house/image/upload/e_brightness:-30/v1621930839/DESstore/aboutus_ogto4c.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-    @media only screen and (max-width: 600px) {
-        .aboutus {
-            font-size: 0.7rem;
-        }
-    }
-
-    @media only screen and (max-width: 400px) {
-        .aboutus {
-            top: 0;
-            font-size: 0.6rem;
-        }
-    }
-
 }

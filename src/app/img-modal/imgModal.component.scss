@@ -7,24 +7,24 @@
         height: 100%;
         // border-radius: 1rem;
     }
+}
 
-    .text {
-        position: absolute;
-        bottom: 0;
-        font-weight: 700;
-        
+.text {
+    // position: absolute;
+    // bottom: 0;
+    font-weight: 700;
+    
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, 0.692);
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    @media only screen and (max-width: 600px) {
         ul {
-            list-style: none;
-            margin-bottom: 0;
-            background-color: rgba(0, 0, 0, 0.692);
-            padding: 0.5rem;
-            font-size: 1rem;
-        }
-
-        @media only screen and (max-width: 600px) {
-            ul {
-                font-size: 0.7rem;
-            }
+            font-size: 0.7rem;
         }
     }
 }
