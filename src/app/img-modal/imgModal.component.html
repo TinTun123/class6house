@@ -7,7 +7,7 @@
     <!-- <img [src]="imgModalAttr.src" alt="image"> -->
 </div>
 
-<div class="text">
+<div *ngIf="imgModalAttr.name" class="text">
     <ul>
         <li>Name - {{imgModalAttr.name}}</li>
         <li>Location - {{imgModalAttr.place}}</li>           

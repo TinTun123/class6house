@@ -18,7 +18,7 @@ export class ProductComponent {
 
     public imgModal = [
         {
-        name: "name01",
+        name: "",
         type: "type01",
         place: "place01",
         src : {
@@ -26,7 +26,7 @@ export class ProductComponent {
             mobile : "https://res.cloudinary.com/class6house/image/upload/v1622709724/herledrum_e1eyws.jpg"
         }
     }, {
-        name: "name02",
+        name: "",
         type: "type02",
         place: "place02",
         src : {
@@ -35,7 +35,7 @@ export class ProductComponent {
         }
     },
     {
-        name: "name03",
+        name: "",
         type: "type03",
         place: "place03",
         src : {
