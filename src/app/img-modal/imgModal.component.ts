@@ -12,4 +12,9 @@ export class ImgModal implements OnInit{
     constructor() {}
     ngOnInit() {
     }
+
+    print(para : any) {
+        console.log(para);
+        
+    }
 }

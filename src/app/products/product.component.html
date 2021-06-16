@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row">
-        <div class="col-10 offset-1 offset-md-0 mb-4 mb-md-0 col-md-4 column">
+        <div class="col-6 offset-3 offset-md-0 mb-4 mb-md-0 col-md-4 column">
             <h2>Oil Drums</h2>
             <div class="card">
-                <a (click)="openModal('customer')">
+                <a (click)="openModal('drum')">
                     <div class="img-block">
                         <img src="https://res.cloudinary.com/class6house/image/upload/v1622705570/drum02_qxzzzb.jpg" alt="">
                         
@@ -20,9 +20,9 @@
                 <a (click)="openModal('pipe')">
                     <div class="img-block">
                         <picture>
-                            <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1622709815/DESstore/industrialDES_akkrkt.jpg">
-                            <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1622709793/industrialMOBILE_kyi5xz.jpg">
-                            <img src="https://res.cloudinary.com/class6house/image/upload/v1622709793/industrialMOBILE_kyi5xz.jpg" alt="">
+                            <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1623846336/industrial_v8fr64.jpg">
+                            <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1623846336/industrial_v8fr64.jpg">
+                            <img src="https://res.cloudinary.com/class6house/image/upload/v1623846336/industrial_v8fr64.jpg" alt="">
                         </picture>
                         
                     </div>
@@ -37,7 +37,7 @@
 
                 <a (click)="openModal('pallet')">
                     <div class="img-block">
-                        <img src="https://res.cloudinary.com/class6house/image/upload/v1622709866/DESstore/pallet_ktxy3x.jpg" alt="">
+                        <img src="https://res.cloudinary.com/class6house/image/upload/v1623846335/pallet01_kw1yf9.jpg" alt="">
                         
                     </div>
                 </a>
@@ -47,22 +47,13 @@
     </div>
 </div>
 
-<to-modal id="customer" opacity="rgba(0, 0, 0, 0.8)">
+<to-modal id="drum" opacity="rgba(0, 0, 0, 0.8)">
     <div class="cu-modal-body">
 
         <app-carousel [modals]="imgModal">
 
         </app-carousel>
 
-    </div>
-</to-modal>
-
-<to-modal id="pallet" opacity="rgba(0, 0, 0, 0.6)">
-    <div class="cu-modal-body">
-        <h1>Pallet Box</h1>
-        <div class="img-modal">
-            <img src="https://res.cloudinary.com/class6house/image/upload/v1622709866/DESstore/pallet_ktxy3x.jpg" alt="">
-        </div>
         <div class="text">
 
             <ul>
@@ -72,19 +63,33 @@
         </div>
 
     </div>
+</to-modal>
+
+<to-modal id="pallet" opacity="rgba(0, 0, 0, 0.6)">
+    <div class="cu-modal-body">
+        <app-carousel [modals]="pallet">
+
+        </app-carousel>
+        <!-- <div class="img-modal">
+            <img src="https://res.cloudinary.com/class6house/image/upload/v1622709866/DESstore/pallet_ktxy3x.jpg" alt="">
+        </div> -->
+        <!-- <div class="text">
+
+            <ul>
+                <li>Class6 House Facebook Page</li>
+                <li>ph - 09 785050225, 09 764564974</li>
+            </ul>
+        </div> -->
+
+    </div>
 
 </to-modal>
 
 <to-modal id="pipe" opacity="rgba(0, 0, 0, 0.6)">
     <div class="cu-modal-body">
-        <h1>Industrial Decoration</h1>
-        <div class="img-modal">
-            <picture>
-                <source media="(min-width:800px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1622709815/DESstore/industrialDES_akkrkt.jpg">
-                <source media="(max-width:799px)" srcset="https://res.cloudinary.com/class6house/image/upload/v1622709793/industrialMOBILE_kyi5xz.jpg">
-                <img src="https://res.cloudinary.com/class6house/image/upload/v1622709793/industrialMOBILE_kyi5xz.jpg" alt="">
-            </picture>
-        </div>
+        <app-carousel [modals]="industrialModal">
+
+        </app-carousel>
         <div class="text">
 
             <ul>

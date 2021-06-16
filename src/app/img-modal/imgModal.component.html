@@ -7,9 +7,13 @@
     <!-- <img [src]="imgModalAttr.src" alt="image"> -->
 </div>
 
-<div *ngIf="imgModalAttr.name" class="text">
+<div  class="text">
     <ul>
-        <li>Name - {{imgModalAttr.name}}</li>
-        <li>Location - {{imgModalAttr.place}}</li>           
+        <li *ngIf="imgModalAttr.name">Name - {{imgModalAttr.name}}</li>
+        <li *ngIf="imgModalAttr.place">Location - {{imgModalAttr.place}}</li>
+        <li *ngIf="imgModalAttr.item">Item - {{imgModalAttr.item}}</li>
+        <li *ngIf="imgModalAttr.dimension">dimension - {{imgModalAttr.dimension}}</li>
+        <li *ngIf="imgModalAttr.color">Color - {{imgModalAttr.color}}</li>
+        <li *ngIf="imgModalAttr.price">Price - {{imgModalAttr.price}}</li>           
     </ul>
 </div>
